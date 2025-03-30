@@ -254,17 +254,21 @@
 				function = "uart1";
 			};
 
-      /omit-if-no-ref/
       uart2_pb0_pins: uart2-pb0-pins {
-              pins = "PB0", "PB1";
-              function = "uart2";
+        pins = "PB0", "PB1";
+        function = "uart2";
       };
  			
-      /omit-if-no-ref/
       uart2_pd3_rts_cts_pins: uart2-pd3-rts-cts-pins {
-              pins = "PD3", "PD4";
-              function = "uart2";
+        pins = "PD3", "PD4";
+        function = "uart2";
       };
+
+			/omit-if-no-ref/
+			uart3_pd10_pins: uart3-pd10-pins {
+				pins = "PD10", "PD11";
+				function = "uart3";
+			};
 		};
 
 		pwm: pwm@2000c00 {

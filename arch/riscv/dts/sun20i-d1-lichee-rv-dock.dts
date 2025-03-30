@@ -13,7 +13,6 @@
 
 	aliases {
 		ethernet1 = &rtl8723ds;
-		serial2 = &uart2;
 	};
 
 	dmic_codec: dmic-codec {

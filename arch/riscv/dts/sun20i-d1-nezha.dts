@@ -258,6 +258,13 @@
 	/* XR829 bluetooth is connected here */
 };
 
+&uart2 {
+	uart-has-rtscts;
+	pinctrl-0 = <&uart2_pb0_pins>, <&uart2_pd3_rts_cts_pins>;
+	pinctrl-names = "default";
+	status = "okay";
+};
+
 &usb_otg {
 	dr_mode = "otg";
 	status = "okay";
