@@ -170,11 +170,11 @@
 				function = "mmc1";
 			};
 
-//			/omit-if-no-ref/
-//			mmc2_pins: mmc2-pins {
-//				pins = "PC2", "PC3", "PC4", "PC5", "PC6", "PC7";
-//				function = "mmc2";
-//			};
+			/omit-if-no-ref/
+			mmc2_pins: mmc2-pins {
+				pins = "PC2", "PC3", "PC4", "PC5", "PC6", "PC7";
+				function = "mmc2";
+			};
 
 			/omit-if-no-ref/
 			rgmii_pe_pins: rgmii-pe-pins {
@@ -215,10 +215,9 @@
 				function = "pwm7";
 			};
 
-// "PC5", "PC6",
 			/omit-if-no-ref/
 			spi0_pins: spi0-pins {
-				pins = "PC2", "PC3", "PC4", "PC7";
+				pins = "PC2", "PC3", "PC4", "PC5", "PC6", "PC7";
 				function = "spi0";
 			};
 
@@ -252,17 +251,17 @@
 				function = "uart1";
 			};
 
-			/omit-if-no-ref/
-			uart2_pb0_pins: uart2-pb0-pins {
-				pins = "PB0", "PB1";
-				function = "uart2";
-			};
-
-			/omit-if-no-ref/
-			uart2_pd3_rts_cts_pins: uart2-pd3-rts-cts-pins {
-				pins = "PD3", "PD4";
-				function = "uart2";
-			};
+      /omit-if-no-ref/
+      uart2_pb0_pins: uart2-pb0-pins {
+              pins = "PB0", "PB1";
+              function = "uart2";
+      };
+ 			
+      /omit-if-no-ref/
+      uart2_pd3_rts_cts_pins: uart2-pd3-rts-cts-pins {
+              pins = "PD3", "PD4";
+              function = "uart2";
+      };
 		};
 
 		pwm: pwm@2000c00 {
