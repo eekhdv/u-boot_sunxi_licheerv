@@ -263,12 +263,6 @@
         pins = "PD3", "PD4";
         function = "uart2";
       };
-
-			/omit-if-no-ref/
-			uart3_pd10_pins: uart3-pd10-pins {
-				pins = "PD10", "PD11";
-				function = "uart3";
-			};
 		};
 
 		pwm: pwm@2000c00 {
