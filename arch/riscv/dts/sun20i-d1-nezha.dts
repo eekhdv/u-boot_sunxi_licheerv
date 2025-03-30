@@ -113,22 +113,22 @@
 	status = "okay";
 };
 
-&i2c2 {
-	pinctrl-0 = <&i2c2_pb0_pins>;
-	pinctrl-names = "default";
-	status = "okay";
-
-	pcf8574a: gpio@38 {
-		compatible = "nxp,pcf8574a";
-		reg = <0x38>;
-		interrupt-parent = <&pio>;
-		interrupts = <1 2 IRQ_TYPE_LEVEL_LOW>; /* PB2 */
-		interrupt-controller;
-		gpio-controller;
-		#gpio-cells = <2>;
-		#interrupt-cells = <2>;
-	};
-};
+// &i2c2 {
+// 	pinctrl-0 = <&i2c2_pb0_pins>;
+// 	pinctrl-names = "default";
+// 	status = "okay";
+// 
+// 	pcf8574a: gpio@38 {
+// 		compatible = "nxp,pcf8574a";
+// 		reg = <0x38>;
+// 		interrupt-parent = <&pio>;
+// 		interrupts = <1 2 IRQ_TYPE_LEVEL_LOW>; /* PB2 */
+// 		interrupt-controller;
+// 		gpio-controller;
+// 		#gpio-cells = <2>;
+// 		#interrupt-cells = <2>;
+// 	};
+// };
 
 &ledc {
 	pinctrl-0 = <&ledc_pc0_pin>;
