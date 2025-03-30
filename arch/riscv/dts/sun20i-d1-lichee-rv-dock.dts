@@ -13,6 +13,7 @@
 
 	aliases {
 		ethernet1 = &rtl8723ds;
+		serial2 = &uart2;
 	};
 
 	dmic_codec: dmic-codec {
@@ -165,6 +166,13 @@
 		enable-gpios = <&pio 6 18 GPIO_ACTIVE_HIGH>; /* PG18 */
 		host-wake-gpios = <&pio 6 17 GPIO_ACTIVE_HIGH>; /* PG17 */
 	};
+};
+
+&uart2 {
+	uart-has-rtscts;
+	pinctrl-0 = <&uart2_pb0_pins>, <&uart2_pd3_rts_cts_pins>;
+	pinctrl-names = "default";
+	status = "okay";
 };
 
 &usbphy {
